@@ -1,7 +1,7 @@
 ---
 title: "Statistics and ML"
 subtitle: "MSSP Practicum Discussion"
-author: "MSSP Practicum II"
+author: "Jin Yan"
 date: "2023-01-24"
 output: html_document
 ---
@@ -63,8 +63,18 @@ predict(m, data.frame(distance = 0.5), se = TRUE, type = "response")
 
 Questions and tasks:
 
+ 
+```{r}
+par(mfrow=c(2,2))
+plot(m)
+```
+
 - Comment on the fit, plot residuals and comment on them.
 - Comment on the prediction; does it seem reasonable?
+
+the residuals is average close to zero and seem to have a pattern, the fit result is not good,
+it is no meaningful but without useless, 
+and the model fit is reasonable but due to the residuals, we need to cautious.
 
 
 ## ML 1: LOESS
